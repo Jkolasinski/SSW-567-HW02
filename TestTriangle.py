@@ -39,7 +39,7 @@ class TestTriangles(unittest.TestCase):
     	self.assertEqual(classifyTriangle(500,500,500),'InvalidInput')
 
     def testInvalidInput3(self):
-    	self.assertEqual(classifyTriangle(5,'z',10),'InvalidInput')
+    	self.assertEqual(classifyTriangle('x','y','z'),'InvalidInput')
 
     def testNotATriangle(self):
     	self.assertNotEqual(classifyTriangle(5,5,20),'Isoceles','5,5,20 should be NotATriangle')
